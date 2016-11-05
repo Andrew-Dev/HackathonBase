@@ -11,7 +11,6 @@ var io = require('socket.io')(http);
 var socketHandler = require('./socket');
 var bodyParser = require('body-parser');
 var db = require('./db');
-var controls = require('./controls');
 var fs = require("fs");
 var auth = require('./auth');
 var config = require('./config');
