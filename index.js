@@ -63,6 +63,7 @@ app.get('/', function (req, res) {
 app.get('/css/:file', function (req, res) { sendFolder("css",req,res); });
 app.get('/images/:file', function (req, res) { sendFolder("images",req,res); });
 app.get('/js/:file', function (req, res) { sendFolder("js",req,res); });
+app.get('/fonts/:file', function (req, res) { sendFolder("fonts",req,res); });
 app.get('/files/:file', function (req, res) { sendFolder("files",req,res); });
 
 function sendFolder(folder,req,res)
@@ -105,6 +106,6 @@ app.get('/signout', function(req, res) {
   res.redirect('/');
 });
 
-var expserv = http.listen(6969, function () {
+var expserv = http.listen(1080, function () {
   console.log('Hackathon Server!');
 });
